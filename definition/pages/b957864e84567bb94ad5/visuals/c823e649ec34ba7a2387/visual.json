@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "c823e649ec34ba7a2387",
+  "position": {
+    "x": 1450,
+    "y": 98,
+    "z": 4000,
+    "height": 150,
+    "width": 428,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Avg SPM"
+                }
+              },
+              "queryRef": "preprocessed_data.Avg SPM",
+              "nativeQueryRef": "Avg SPM"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "preprocessed_data"
+                  }
+                },
+                "Property": "Avg SPM"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

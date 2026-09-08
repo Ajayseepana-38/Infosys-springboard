@@ -1,0 +1,128 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Fluent2-CY26SU08",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Frontier",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "Fluent2-CY26SU08",
+          "path": "BaseThemes/Fluent2-CY26SU08.json",
+          "type": "BaseTheme"
+        },
+        {
+          "name": "Frontier",
+          "path": "BuiltInThemes/Frontier.json",
+          "type": "CustomTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Screenshot_2026-08-25_1619454140898750156078.png",
+          "path": "Screenshot_2026-08-25_1619454140898750156078.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-08-25_1627027014316668063616.png",
+          "path": "Screenshot_2026-08-25_1627027014316668063616.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-02_0032373701009774780988.png",
+          "path": "Screenshot_2026-09-02_0032373701009774780988.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-02_00374905856027049491641.png",
+          "path": "Screenshot_2026-09-02_00374905856027049491641.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-02_004213339016761837024.png",
+          "path": "Screenshot_2026-09-02_004213339016761837024.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-02_0042135918241115801071.png",
+          "path": "Screenshot_2026-09-02_0042135918241115801071.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-02_0043353493696252642391.png",
+          "path": "Screenshot_2026-09-02_0043353493696252642391.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-02_00434539297907095976425.png",
+          "path": "Screenshot_2026-09-02_00434539297907095976425.png",
+          "type": "Image"
+        },
+        {
+          "name": "Screenshot_2026-09-03_10420022308502598683178.png",
+          "path": "Screenshot_2026-09-03_10420022308502598683178.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "b4dcb72e2f8f7d095b6a",
+  "position": {
+    "x": 10,
+    "y": 294,
+    "z": 10000,
+    "height": 396,
+    "width": 1360,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "state"
+                }
+              },
+              "queryRef": "preprocessed_data.state",
+              "nativeQueryRef": "state"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Total Records"
+                }
+              },
+              "queryRef": "preprocessed_data.Total Records",
+              "nativeQueryRef": "Total Records"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "preprocessed_data"
+                        }
+                      },
+                      "Property": "state"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(preprocessed_data.state)",
+              "nativeQueryRef": "First state"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Total Locations"
+                }
+              },
+              "queryRef": "preprocessed_data.Total Locations",
+              "nativeQueryRef": "Total Locations"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Avg PM2.5"
+                }
+              },
+              "queryRef": "preprocessed_data.Avg PM2.5",
+              "nativeQueryRef": "Avg PM2.5"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Total Records"
+                }
+              },
+              "queryRef": "preprocessed_data.Total Records",
+              "nativeQueryRef": "Total Records"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Avg Pollutants Available"
+                }
+              },
+              "queryRef": "preprocessed_data.Avg Pollutants Available",
+              "nativeQueryRef": "Avg Pollutants Available"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Total Locations"
+                }
+              },
+              "queryRef": "preprocessed_data.Total Locations",
+              "nativeQueryRef": "Total Locations",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "preprocessed_data"
+                    }
+                  },
+                  "Property": "Avg PM2.5"
+                }
+              },
+              "queryRef": "preprocessed_data.Avg PM2.5",
+              "nativeQueryRef": "Avg PM2.5"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "showGradientLegend": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Pollution Intensity vs Monitoring Coverage'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

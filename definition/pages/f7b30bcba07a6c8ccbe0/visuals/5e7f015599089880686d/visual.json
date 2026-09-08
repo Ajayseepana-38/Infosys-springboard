@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "5e7f015599089880686d",
+  "position": {
+    "x": 918.33333333333337,
+    "y": 673.33333333333337,
+    "z": 14000,
+    "height": 383.33333333333337,
+    "width": 980,
+    "tabOrder": 14000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Agency_Recovery"
+                    }
+                  },
+                  "Property": "type.1"
+                }
+              },
+              "queryRef": "Agency_Recovery.type.1",
+              "nativeQueryRef": "type.1",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Agency_Recovery"
+                    }
+                  },
+                  "Property": "state"
+                }
+              },
+              "queryRef": "Agency_Recovery.state",
+              "nativeQueryRef": "state",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Agency_Recovery"
+                        }
+                      },
+                      "Property": "location"
+                    }
+                  },
+                  "Function": 2
+                }
+              },
+              "queryRef": "Min(Agency_Recovery.location)",
+              "nativeQueryRef": "Count of location"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
